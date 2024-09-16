@@ -1,9 +1,9 @@
 :root {
-    --primary-color: #2c3e50;
-    --secondary-color: #3498db;
-    --accent-color: #e74c3c;
-    --text-color: #333;
-    --bg-color: #f5f5f5;
+    --primary-color: #3a6ea5;
+    --secondary-color: #004e98;
+    --accent-color: #ff6b6b;
+    --text-color: #333333;
+    --bg-color: #f0f5fa;
     --white: #ffffff;
 }
 
@@ -18,7 +18,8 @@ body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     color: var(--text-color);
-    background-color: var(--bg-color);
+    background: linear-gradient(135deg, #e6f2ff 0%, #f0f5fa 100%);
+    background-attachment: fixed;
 }
 
 .container {
@@ -28,12 +29,11 @@ body {
 }
 
 header {
+    
+
+
     background-color: var(--primary-color);
-    padding: 20px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 nav {
@@ -70,7 +70,7 @@ nav ul li a:hover {
 }
 
 .hero {
-    background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)), url('images/hero-bg.jpg');
+    background: linear-gradient(rgba(58, 110, 165, 0.9), rgba(0, 78, 152, 0.9)), url('images/hero-bg.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -509,3 +509,58 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+:root {
+    --primary-color: #3a6ea5;
+    --secondary-color: #004e98;
+    --accent-color: #ff6b6b;
+    --text-color: #333333;
+    --bg-color: #f0f5fa;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background: linear-gradient(135deg, #e6f2ff 0%, #f0f5fa 100%);
+    background-attachment: fixed;
+}
+
+.hero {
+    background: linear-gradient(rgba(58, 110, 165, 0.9), rgba(0, 78, 152, 0.9)), url('images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--white);
+}
+
+header {
+    background-color: var(--primary-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.skill-category, .project-card, .timeline-content, .education-item {
+    background-color: var(--white);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.skill-category:hover, .project-card:hover, .education-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+#contact {
+    background-color: var(--secondary-color);
+}
+
+footer {
+    background-color: var(--secondary-color);
+}
+
+/* Rest of the CSS remains the same */
